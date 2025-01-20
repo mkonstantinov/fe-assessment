@@ -1,0 +1,76 @@
+<div class="primary-nav" id="primary-nav">
+  <ul class="primary-nav__menu inline-list">
+    <li class="nav-item">
+      <nav-item class="nav-item__content">
+        <button type="button" class="nav-item__link button-reset" aria-controls="dropdown_e3Vr6B" aria-expanded="false" aria-label="Open menu for Top Selling" data-trigger="">
+          <span class="nav-item__wrapper">
+            <span class="nav-item__text">Top Selling</span>
+            <span class="nav-item__trigger"></span>
+          </span>
+        </button>
+        <div id="dropdown_e3Vr6B" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu aria-label="Top Selling">
+          <%= partial "components/mega-menu", locals: {
+            item: 'top-selling',
+            grid_columns: 4
+          } %>
+        </div>
+      </nav-item>
+    </li>
+    <li class="nav-item">
+      <nav-item class="nav-item__content">
+        <span class="nav-item__wrapper">
+          <a href="/collections/toys" class="nav-item__link" aria-label="Toys">
+            <span class="nav-item__text">Toys</span>
+          </a><button type="button" class="button-reset nav-item__trigger" aria-hidden="true" aria-label="Open menu for Toys" aria-controls="dropdown_9A9Fa8" aria-expanded="false"></button>
+        </span>
+
+        <div id="dropdown_9A9Fa8" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu aria-label="Toys">
+          <%= partial "components/mega-menu", locals: {
+            item: 'toys',
+            grid_columns: 3
+          } %>
+        </div>
+      </nav-item>
+    </li>
+    <li class="nav-item">
+      <nav-item class="nav-item__content">
+        <button type="button" class="nav-item__link button-reset" aria-controls="dropdown_8PXbqa" aria-expanded="false" aria-label="Open menu for Apparel" data-trigger="">
+          <span class="nav-item__wrapper">
+            <span class="nav-item__text">Apparel</span>
+            <span class="nav-item__trigger"></span>
+          </span>
+        </button>
+        <div id="dropdown_8PXbqa" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu aria-label="Apparel">
+          <%= partial "components/mega-menu", locals: {
+            item: 'apparel',
+            grid_columns: 3
+          } %>
+        </div>
+      </nav-item>
+    </li>
+    <li class="nav-item">
+      <nav-item class="nav-item__content">
+        <span class="nav-item__wrapper">
+          <a href="/collections/paintings" class="nav-item__link" aria-label="Paintings">
+            <span class="nav-item__text">Paintings</span>
+          </a><button type="button" class="button-reset nav-item__trigger" aria-hidden="true" aria-label="Open menu for Paintings" aria-controls="dropdown_YbMRrU" aria-expanded="false"></button>
+        </span>
+        <div id="dropdown_YbMRrU" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu aria-label="Paintings">
+          <%= partial "components/mega-menu", locals: {
+            item: 'paintings',
+            grid_columns: 3
+          } %>
+        </div>
+      </nav-item>
+    </li>
+    <li class="nav-item">
+      <nav-item class="nav-item__content">
+        <span class="nav-item__wrapper">
+          <a href="/blogs/news" class="nav-item__link" aria-label="Blog">
+            <span class="nav-item__text">Blog</span>
+          </a>
+        </span>
+      </nav-item>
+    </li>
+  </ul>
+</div>

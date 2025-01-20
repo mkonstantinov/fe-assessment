@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Syatt Front End Developer Assessment</title>
+
+      <link rel="stylesheet" href="/stylesheets/main.css" media="all">
+
+     <script type="importmap">
+        {
+          "imports": {
+            "nav-item": "/javascripts/nav-item.js",
+            "drawer": "/javascripts/drawer.js",
+            "helpers": "/javascripts/helpers.js",
+            "wyatt": "/javascripts/wyatt.js",
+            "quantity-stepper": "/javascripts/quantity-stepper.js",
+            "quantity": "/javascripts/mobile-nav-item.js",
+            "hover-intent": "/javascripts/hover-intent.js"
+          }
+        }
+      </script>
+      <script type="module" src="/javascripts/main.js"></script>
+  </head>
+  <body>
+    <%= partial "components/page-header" %>
+
+    <div class="page-content">
+      <%= yield %>
+    </div>
+
+    <%= partial "components/page-footer" %>
+  </body>
+</html>

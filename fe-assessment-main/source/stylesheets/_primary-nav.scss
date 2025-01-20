@@ -1,0 +1,17 @@
+@layer components {
+  .primary-nav__menu {
+    gap: var(--spacing-unit-m);
+  }
+  .mega-menu__list--grid {
+    display: grid;
+    gap: var(--grid-gap, 1rem);
+
+    &[data-columns="3"] {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &[data-columns="4"] {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@layer components {
+  .footer-menus {
+    grid-area: menus;
+    @media screen and (max-width: 768px), print {
+      margin-bottom: var(--spacing-unit-s);
+    }
+  }
+  .footer-menus__nav {
+    @media screen and (max-width: 768px), print {
+      text-align: center;
+    }
+  }
+  .footer-menus__content {
+    @media screen and (min-width: 768px), print {
+      flex-direction: row;
+    }
+  }
+}
